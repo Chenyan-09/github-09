@@ -1,12 +1,6 @@
-#include <stdio.h>
-void input(char a[]) 
-{
-	scanf("%s",a);
-}
-int main() 
-{
-	char s[1000];
-	input(s);
-    printf("%s",s);
+#include <stdio.h> 
+
+int main() {
+    printf("Hello, World!\n");
     return 0;
 }
