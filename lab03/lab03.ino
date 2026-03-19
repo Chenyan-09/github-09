@@ -21,7 +21,7 @@ void loop() {
     ledcWrite(ledPin, dutyCycle);  
       ledcWrite(ledPin_G, 255-dutyCycle);
         ledcWrite(ledPin_Y, dutyCycle); 
-    delay(10);
+    delay(100);
   }
 
   // 逐渐变暗
@@ -29,7 +29,7 @@ void loop() {
     ledcWrite(ledPin, dutyCycle);  
       ledcWrite(ledPin_G, 255-dutyCycle);
         ledcWrite(ledPin_Y, dutyCycle); 
-    delay(10);
+    delay(100);
   }
   
   Serial.println("Breathing cycle completed");
