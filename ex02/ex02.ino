@@ -3,7 +3,7 @@
 #define LED_PIN_G 25
 #define LED_PIN_Y 32
 long preMillis = 0;
-const long t = 1000;
+const long interval = 1000;
 int leds = LOW;
 void setup() {
   Serial.begin(115200);
@@ -15,7 +15,7 @@ void setup() {
 void loop() 
 {
   long currentMillis = millis(); 
-  if (currentMillis - preMillis >= t) {
+  if (currentMillis - preMillis >= interval) {
     preMillis = currentMillis; 
     leds = !leds;          
     digitalWrite(LED_PIN, leds);
