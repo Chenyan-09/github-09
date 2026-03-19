@@ -22,6 +22,10 @@ void loop()
     digitalWrite(LED_PIN_R, leds);
     digitalWrite(LED_PIN_G, leds);
     digitalWrite(LED_PIN_Y, leds);
-    Serial.println(leds);
+    if (leds == HIGH) {
+  Serial.println("LED ON");
+} else {
+  Serial.println("LED OFF");
+}
   }
 }
