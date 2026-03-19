@@ -25,3 +25,4 @@ void loop() {
   digitalWrite(LED_PIN_G, LOW);
   digitalWrite(LED_PIN_Y, LOW);// 熄灭LED
   delay(500);              // 等待1秒
+}
