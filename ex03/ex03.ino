@@ -3,10 +3,10 @@ const int ledPin_G = 25;
 const int ledPin_Y = 32;  
 int led = LOW;
 long previousMillis = 0;
-const long a = 200;    
-const long b = 600;   
+const long a = 300;    
+const long b = 800;   
 const long c = 200;     
-const long d = 1500; 
+const long d = 2000; 
 // SOS 序列：点=0，划=1，间隔=2，长停顿=3
 int sosxu[19] = {0,2,0,2,0,2, 1,2,1,2,1,2, 0,2,0,2,0,2, 3};
 int x = 0;         // 当前序列位置
