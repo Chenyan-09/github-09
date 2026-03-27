@@ -12,7 +12,7 @@ void setup() {
 
 void loop() {
   int val = touchRead(TOUCH_PIN);
-  bool nowTouched = (val < 600);
+  bool nowTouched = (val < 500);
   if (nowTouched && !lastTouched) {
     ledState = !ledState;
     digitalWrite(LED_PIN, ledState);
